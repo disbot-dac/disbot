@@ -643,7 +643,7 @@ music:
 
     VolumeCommand:
         error: 'Nothing is playing, request music first with `{0}play`'
-        requireDJRole: 'The `DJ` role is required to change the volume!'
+        requireDJRole: 'You need the `DJ` role to change the volume!'
         invalidVolume: 'Invalid volume given, the volume must be a valid number between 1 and 100.'
         nowPlaying: ':musical_note: Music is playing at **:volume** volume'
         setTo: ':musical_note: Volume set to **:volume**'
@@ -733,7 +733,7 @@ utility:
 
     InviteCommand:
         message: 'You can invite me to your server by [clicking here](:oauth) or using the link below:\n\n:oauth\n\n:note'
-        note: 'If you would like try out newly developed features before everyone else, you could also try the *__Cutting Edge__* bot which gets new features added almost daily, you can invite that bot by [clicking here](:edgeInvite) or using the link below:\n\n:edgeInvite'
+        note: 'If you would like to beta test features before they're released to everyone, join our Support Server at invite.gg/disbot & DM Disbot Help!'
 
     IPInfoCommand:
         hostname: 'Hostname'
@@ -760,7 +760,7 @@ utility:
             800: 'too slow. :disappointed:'
             900: 'bad. :sob: (helpme)'
             1600: '#BlameDiscord. :angry:'
-            10000: 'this makes no sense :thinking: #BlameAlexis'
+            10000: 'this makes no sense :thinking:'
             other: 'slow af. :dizzy_face:'
 
     RankBackgroundCommand:
@@ -795,7 +795,7 @@ utility:
 
     RemindCommand:
         errors:
-            invalidMeHere: 'Invalid type given, you must declare where you want to be reminded, by either using `here` to be reminded in the current channel, or `me` to be reminded in a direct message.'
+            invalidMeHere: 'Invalid type given, you must say where you want to be reminded, by either using `here` to be reminded in the current channel, or `me` to be reminded in a direct message.'
             invalidTime: 'Invalid time given, the time must be greater than 60 seconds and less than 3 days.'
 
     ServerIdCommand:
@@ -819,21 +819,21 @@ utility:
         totalShards: 'Total Shards'
 
     SourceCommand:
-        noArgs: 'AvaIre source code:'
-        command: 'AvaIre source code for the **:command** command:'
-        invalidCommand: 'Invalid command given, here is the full source code instead.'
-        externalCommand: "The command is registered via an external plugin, the author of the plugin hasn't made the source of the command public, or they forgot to add a link to it, here is the full source code for the bot instead."
+        noArgs: 'I couldn't find what you were looking for.'
+        command: 'I couldn't find what you were looking for.'
+        invalidCommand: 'Invalid command given!'
+        externalCommand: "The command is registered via an external plugin, the author of the plugin hasn't made the source of the command public, or they forgot to add a link to it."
 
     StatsCommand:
-        title: 'Official Bot Server Invite'
+        title: 'Disbot Stats'
         footer: 'Currently playing in {0} servers with {1} songs in the queue.'
         formats:
             perMinute: '{0} ({1} per min)'
             perSecond: '{0} ({1} per sec)'
             memory: '{0}Mb / {1}Mb'
         fields:
-            author: 'Author'
-            website: 'Website'
+            author: 'Melonfruit#0001'
+            website: 'disbot.net'
             library: 'Library'
             database: 'DB Queries ran'
             messages: 'Messages Received'
@@ -866,15 +866,15 @@ utility:
             joinedDiscord: 'Joined Discord'
             roles: 'Roles ({0})'
             servers: 'Servers'
-        inServers: '{0} the bot knows about'
+        inServers: '{0} Disbot knows about'
         noRoles: '*This user does not have any roles*'
         timeFormat: 'EEE, dd MMM yyyy HH:mm'
 
     VersionCommand:
         current: 'I am currently `:difference` :type versions behind!'
-        getLatest: 'You can get the latest version of me on github at [avaire/avaire](https://github.com/avaire/avaire)'
-        usingLatest: "You're using the latest version of AvaIre!"
-        latestVersion: 'The latest version of AvaIre is v{0}'
+        getLatest: 'You can ask my team in the Support Server at invite.gg/disbot if the bot is up to date!'
+        usingLatest: "You're using the latest version of Disbot!"
+        latestVersion: 'The latest version of Disbot is v{0}'
         latestChanges: 'Latest changes:'
         versions:
             majorName: 'Major'
@@ -885,7 +885,7 @@ utility:
             patch: 'Patch version updates are bug fixes, refactoring of existing code and very minor changes that wont affect other things in the code base, it is recommended that you update on patch version changes to keep up with the bug fixes and patches.'
 
     WeatherCommand:
-        noCityFound: "No city was found with the name of **:name**, are you sure you spelt it correctly?"
+        noCityFound: "I couldn't find a city with the name of **:name**, are you sure you spelt it correctly?"
         fields:
             weatherFor: "Weather for {0}, {1}"
             country: "Country"
